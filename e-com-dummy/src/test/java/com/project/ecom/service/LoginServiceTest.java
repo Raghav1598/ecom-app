@@ -1,7 +1,7 @@
 package com.project.ecom.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertNotNull;
+//import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.when;
 
 import java.util.Optional;
@@ -26,7 +26,7 @@ class LoginServiceTest {
 
 	@Test
 	void testInsertUser() {
-		assertNotNull(mockLoginRepository);
+		//assertNotNull(mockLoginRepository);
 
 		Optional<User> user = Optional
 				.ofNullable(new User("Raghav121", "Raghav121", "9999999999", "raghav121@gmail.com"));
@@ -40,7 +40,7 @@ class LoginServiceTest {
 
 	@Test
 	void testUpdateUser() {
-		assertNotNull(mockLoginRepository);
+		//assertNotNull(mockLoginRepository);
 
 		Optional<User> user = Optional
 				.ofNullable(new User("Raghav121", "Raghav121", "9999999999", "raghav121@gmail.com"));
@@ -54,7 +54,7 @@ class LoginServiceTest {
 
 	@Test
 	void testFindByUserId() {
-		assertNotNull(mockLoginRepository);
+		//assertNotNull(mockLoginRepository);
 
 		Optional<User> user = Optional
 				.ofNullable(new User("Raghav121", "Raghav121", "9999999999", "raghav121@gmail.com"));
@@ -67,7 +67,7 @@ class LoginServiceTest {
 
 	@Test
 	void testRemoveUser() {
-		assertNotNull(mockLoginRepository);
+		//assertNotNull(mockLoginRepository);
 
 		Optional<User> user = Optional
 				.ofNullable(new User("Raghav121", "Raghav121", "9999999999", "raghav121@gmail.com"));
