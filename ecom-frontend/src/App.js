@@ -1,19 +1,11 @@
 import './App.css';
-import Header from './customs/Header';
-import Footer from './customs/Footer';
-import LoginPage from './Signup/LoginPage';
-//import Login from './Signup/Login';
+import EComApp from './EComApp';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      {
-        //<Login></Login>
-      }
-      <LoginPage></LoginPage>
-      <Footer></Footer>
+      <EComApp></EComApp>
     </div>
   );
 }
