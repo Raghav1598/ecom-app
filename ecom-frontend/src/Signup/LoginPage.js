@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import validator from 'validator';
 import LoginService from "../services/LoginService";
+import {Link} from "react-router-dom";
 import './LoginPage.css'
 
 function LoginPage() {
@@ -27,8 +28,10 @@ function LoginPage() {
     function handleResponse(response){
       let expectedPassword = response.data.password;
       if(expectedPassword === password){
-        
-      }else console.log(password);
+        alert("Successful Login!");   
+      } else {
+        alert("Wrong User Credentials!")
+      }
     }
 
     return (
@@ -47,6 +50,9 @@ function LoginPage() {
               <Form.Text>*The Password Should be eight characters long.*</Form.Text>
             </Form.Group>
             <Button variant="primary" type="submit" disabled={!validate()} onClick={authenticate}>Submit</Button>
+            <Form.Group className="mb-3" controlId="formBasicSignUp">
+              <Form.Label>New User? <Link to="/signup">Sign Up</Link></Form.Label>
+            </Form.Group>
           </Form>
           </Col>
           </Row>
