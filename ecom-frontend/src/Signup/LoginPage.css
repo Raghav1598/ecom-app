@@ -4,3 +4,8 @@
     align-items: center;
     height:100vh;  
 }
+.required-field::before {
+    content: "*";
+    color: red;
+    float: right;
+}
