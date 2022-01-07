@@ -4,6 +4,7 @@ import LoginPage from "./Signup/LoginPage";
 import Home from "./webpage/Home";
 import Header from "./customs/Header";
 import Footer from "./customs/Footer";
+import SignUpPage from "./Signup/SignUpPage";
 
 function EComApp(){
     return (
@@ -13,6 +14,7 @@ function EComApp(){
                 <Routes>
                     <Route path="/" exact element={<Home/>}/>
                     <Route path="/login" element={<LoginPage/>}/>
+                    <Route path="/signup" element={<SignUpPage/>}></Route>
                     {
                         //<AuthenticatedRoute path="/logout" component=LoginPage/>
                     }
